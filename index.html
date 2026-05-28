@@ -1,0 +1,2275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Proposal - Spiritual Services Marketing | Colorful Decor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #06B6D4;
+            --secondary-color: #A855F7;
+            --dark-color: #1f2937;
+            --light-bg: #f9fafb;
+            --accent-pink: #EC4899;
+            --accent-blue: #3B82F6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.8;
+            color: var(--dark-color);
+            background: #ffffff;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            padding: 1rem 0;
+            box-shadow: 0 8px 32px rgba(6, 182, 212, 0.25);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white !important;
+            animation: slideInDown 0.6s ease-out;
+        }
+
+        .navbar-brand img {
+            height: 35px;
+            object-fit: contain;
+            margin-right: 0.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero-new {
+            background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 50%, #f3f0ff 100%);
+            padding: 6rem 0;
+            border-bottom: 1px solid rgba(6, 182, 212, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-new::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(168, 85, 247, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .hero-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3.8em;
+            font-weight: 800;
+            color: var(--dark-color);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            letter-spacing: -1px;
+            animation: slideInUp 0.8s ease-out;
+        }
+
+        .hero-text h1 span {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            color: #333;
+            animation: fadeInUp 0.8s ease-out 0.3s backwards;
+        }
+
+        .btn-cyan {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 0.875rem 2.5rem;
+            font-weight: 600;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 12px 30px rgba(6, 182, 212, 0.35);
+            cursor: pointer;
+            font-size: 1.05em;
+            position: relative;
+            overflow: hidden;
+            animation: bounce-light 2.5s ease-in-out infinite;
+        }
+
+        .btn-cyan::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn-cyan:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(6, 182, 212, 0.4);
+            color: white;
+        }
+
+        .btn-cyan:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            border-radius: 50px;
+            padding: 0.875rem 2.5rem;
+            font-weight: 600;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            font-size: 1.05em;
+        }
+
+        .btn-outline:hover {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(6, 182, 212, 0.3);
+        }
+
+        /* Sections */
+        section h2 {
+            font-size: 3.5em;
+            margin-bottom: 3.5rem;
+            text-align: center;
+            color: var(--dark-color);
+            font-weight: 800;
+            letter-spacing: -0.8px;
+            line-height: 1.2;
+            animation: fadeInUp 0.8s ease-out;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+
+        section h2 span {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+
+        /* Why Section */
+        .why-section {
+            background: #f8f9fa;
+        }
+
+        .why-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 1.25rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(6, 182, 212, 0.15);
+            text-align: center;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            animation: scaleIn 0.6s ease-out backwards;
+        }
+
+        .why-card:nth-child(1) { animation-delay: 0.1s; }
+        .why-card:nth-child(2) { animation-delay: 0.2s; }
+        .why-card:nth-child(3) { animation-delay: 0.3s; }
+        .why-card:nth-child(4) { animation-delay: 0.4s; }
+        .why-card:nth-child(5) { animation-delay: 0.5s; }
+        .why-card:nth-child(6) { animation-delay: 0.6s; }
+
+        .why-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .why-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .why-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 60px rgba(6, 182, 212, 0.2);
+            border-color: rgba(6, 182, 212, 0.4);
+        }
+
+        .why-card i {
+            font-size: 3.5em;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1.5rem;
+        }
+
+        .why-card h3 {
+            font-size: 1.4em;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+
+        .why-card p {
+            color: #4a4a4a;
+            line-height: 1.8;
+        }
+
+        /* Packages */
+        .package-card {
+            background: white;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+            border: 1px solid rgba(6, 182, 212, 0.1);
+            animation: slideInUp 0.6s ease-out backwards;
+        }
+
+        .package-card:nth-child(1) { animation-delay: 0.2s; }
+        .package-card:nth-child(2) { animation-delay: 0.3s; }
+        .package-card:nth-child(3) { animation-delay: 0.4s; }
+
+        .package-card:hover {
+            transform: translateY(-25px) scale(1.02);
+            box-shadow: 0 40px 80px rgba(6, 182, 212, 0.25);
+        }
+
+        .package-card.featured {
+            transform: scale(1.08);
+            border: 2px solid var(--primary-color);
+        }
+
+        .package-card.featured:hover {
+            transform: scale(1.11) translateY(-25px);
+        }
+
+        .package-card.featured::before {
+            content: '⭐ BEST VALUE';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 0.625rem 1.5rem;
+            border-radius: 25px;
+            font-size: 0.9em;
+            font-weight: bold;
+            box-shadow: 0 6px 20px rgba(6, 182, 212, 0.4);
+            z-index: 10;
+        }
+
+        .package-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 1.875rem 1.25rem;
+            text-align: center;
+        }
+
+        .package-name {
+            font-size: 1.6em;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+            color: white;
+        }
+
+        .package-price {
+            font-size: 2.8em;
+            font-weight: 800;
+            margin: 1.25rem 0;
+            color: white;
+        }
+
+        .package-period {
+            opacity: 0.95;
+            font-size: 1.1em;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 500;
+        }
+
+        .package-body {
+            padding: 1.875rem 1.25rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .package-features {
+            list-style: none;
+            margin: 1.25rem 0;
+            flex-grow: 1;
+            padding: 0;
+        }
+
+        .package-features li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #eee;
+            color: #4a4a4a;
+            display: flex;
+            align-items: center;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        .package-features li:before {
+            content: '✓';
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 0.75rem;
+            font-size: 1.2em;
+        }
+
+        .package-features li:last-child {
+            border-bottom: none;
+        }
+
+        .package-btn {
+            width: 100%;
+            padding: 1rem 0;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 1.05em;
+            margin-top: 1.5rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 12px 30px rgba(6, 182, 212, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .package-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .package-btn:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 18px 45px rgba(6, 182, 212, 0.4);
+        }
+
+        .package-btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* About Section */
+        .raksha-content h3 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 1.25rem;
+        }
+
+        .raksha-content h4 {
+            font-size: 1.2em;
+            color: var(--primary-color);
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .raksha-content p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .raksha-services {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .raksha-services li {
+            padding: 0.75rem 0;
+            color: #555;
+            border-bottom: 1px solid #eee;
+        }
+
+        .raksha-services li:last-child {
+            border-bottom: none;
+        }
+
+        /* Services Section */
+        .service-item h3 {
+            font-size: 2em;
+            margin-bottom: 1.25rem;
+            color: #333;
+        }
+
+        .service-item ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 1rem;
+        }
+
+        .service-item li {
+            padding: 0.625rem 0;
+            color: #666;
+            display: flex;
+            align-items: center;
+        }
+
+        .service-item li:before {
+            content: '→';
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 1rem;
+            font-size: 1.2em;
+        }
+
+        .service-image {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            height: 400px;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 5em;
+        }
+
+        .service-image img {
+            border-radius: 1rem;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Process Section */
+        .process-timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 3rem auto;
+        }
+
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            z-index: 0;
+        }
+
+        .timeline-step {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .timeline-step:nth-child(even) {
+            direction: rtl;
+        }
+
+        .timeline-step:nth-child(even) > .step-content {
+            direction: ltr;
+        }
+
+        .step-circle {
+            width: 90px;
+            height: 90px;
+            background: white;
+            border: 4px solid var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2em;
+            background: linear-gradient(135deg, white, #f0f9ff);
+            color: var(--primary-color);
+            margin: 0 auto;
+            box-shadow: 0 8px 25px rgba(6, 182, 212, 0.3);
+            position: relative;
+            z-index: 2;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: scaleIn 0.5s ease-out backwards;
+        }
+
+        .timeline-step:nth-child(1) .step-circle { animation-delay: 0.1s; }
+        .timeline-step:nth-child(2) .step-circle { animation-delay: 0.25s; }
+        .timeline-step:nth-child(3) .step-circle { animation-delay: 0.4s; }
+        .timeline-step:nth-child(4) .step-circle { animation-delay: 0.55s; }
+        .timeline-step:nth-child(5) .step-circle { animation-delay: 0.7s; }
+        .timeline-step:nth-child(6) .step-circle { animation-delay: 0.85s; }
+
+        .step-circle:hover {
+            transform: scale(1.15);
+            box-shadow: 0 15px 40px rgba(6, 182, 212, 0.4);
+            border-color: var(--secondary-color);
+            color: var(--secondary-color);
+        }
+
+        .step-content {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 1.25rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(6, 182, 212, 0.15);
+            position: relative;
+            overflow: hidden;
+            animation: slideInUp 0.6s ease-out backwards;
+        }
+
+        .timeline-step:nth-child(1) .step-content { animation-delay: 0.2s; }
+        .timeline-step:nth-child(2) .step-content { animation-delay: 0.35s; }
+        .timeline-step:nth-child(3) .step-content { animation-delay: 0.5s; }
+        .timeline-step:nth-child(4) .step-content { animation-delay: 0.65s; }
+        .timeline-step:nth-child(5) .step-content { animation-delay: 0.8s; }
+        .timeline-step:nth-child(6) .step-content { animation-delay: 0.95s; }
+
+        .step-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .step-content:hover::before {
+            transform: scaleX(1);
+        }
+
+        .step-content:hover {
+            box-shadow: 0 20px 50px rgba(6, 182, 212, 0.2);
+            transform: translateY(-12px);
+            border-color: rgba(6, 182, 212, 0.3);
+        }
+
+        .step-content h3 {
+            font-size: 1.5em;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .step-content p {
+            color: #4a4a4a;
+            margin-bottom: 1.1rem;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+
+        .step-items {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 1rem;
+        }
+
+        .step-items li {
+            padding: 0.625rem 0;
+            color: #4a4a4a;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            line-height: 1.6;
+        }
+
+        .step-items li:before {
+            content: '✓';
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 0.625rem;
+            font-size: 1.1em;
+        }
+
+        /* Results Section */
+        .results-section {
+            background: linear-gradient(135deg, #7C3AED 0%, #A855F7 100%);
+            color: white;
+            padding: 8rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .results-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .results-section::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .results-section > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .results-section h2 {
+            color: white;
+            font-size: 3.5em;
+            margin-bottom: 3.5rem;
+        }
+
+        .results-section h2::after {
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .result-stat {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .result-stat:hover {
+            transform: translateY(-10px) scale(1.05);
+            animation: none;
+        }
+
+        .result-stat h3 {
+            animation-play-state: paused;
+        }
+
+        .result-stat:hover h3 {
+            animation-play-state: running;
+        }
+
+        .result-stat h3 {
+            font-size: 4.2em;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: white;
+            line-height: 1;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            animation: slideInUp 0.8s ease-out;
+        }
+
+        .result-stat p {
+            font-size: 1.4em;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 600;
+            line-height: 1.6;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Impact Section */
+        .impact-card {
+            background: white;
+            padding: 3rem 2.5rem;
+            border-radius: 1.5rem;
+            border: 2px solid var(--primary-color);
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 15px 40px rgba(6, 182, 212, 0.12);
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            animation: scaleIn 0.7s ease-out backwards;
+        }
+
+        .impact-card:nth-child(1) { animation-delay: 0.1s; }
+        .impact-card:nth-child(2) { animation-delay: 0.2s; }
+        .impact-card:nth-child(3) { animation-delay: 0.3s; }
+        .impact-card:nth-child(4) { animation-delay: 0.4s; }
+
+        .impact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.05) 0%, rgba(168, 85, 247, 0.05) 100%);
+            opacity: 0;
+            transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 0;
+        }
+
+        .impact-card > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .impact-card:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 30px 70px rgba(6, 182, 212, 0.2);
+            border-color: var(--secondary-color);
+        }
+
+        .impact-card:hover::before {
+            opacity: 1;
+        }
+
+        .impact-number {
+            font-size: 3.5em;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1.25rem;
+            line-height: 1.2;
+            display: inline-block;
+            animation: scaleIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+        }
+
+        .impact-card:nth-child(1) .impact-number { animation-delay: 0.3s; }
+        .impact-card:nth-child(2) .impact-number { animation-delay: 0.4s; }
+        .impact-card:nth-child(3) .impact-number { animation-delay: 0.5s; }
+        .impact-card:nth-child(4) .impact-number { animation-delay: 0.6s; }
+
+        .impact-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+        }
+
+        .impact-card p {
+            color: #666;
+            line-height: 1.7;
+            font-size: 1em;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            margin-bottom: 1.5rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            animation: slideInUp 0.5s ease-out backwards;
+        }
+
+        .faq-item:nth-child(1) { animation-delay: 0.1s; }
+        .faq-item:nth-child(2) { animation-delay: 0.2s; }
+        .faq-item:nth-child(3) { animation-delay: 0.3s; }
+        .faq-item:nth-child(4) { animation-delay: 0.4s; }
+        .faq-item:nth-child(5) { animation-delay: 0.5s; }
+        .faq-item:nth-child(6) { animation-delay: 0.6s; }
+
+        .faq-item:hover {
+            box-shadow: 0 8px 25px rgba(6, 182, 212, 0.12);
+            border-color: rgba(6, 182, 212, 0.3);
+        }
+
+        .faq-question {
+            background: linear-gradient(135deg, #f9fafb 0%, #f3f0ff 100%);
+            padding: 1.5rem 1.75rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 600;
+            color: #333;
+            font-size: 1.05em;
+        }
+
+        .faq-question:hover {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding-left: 2rem;
+        }
+
+        .faq-answer {
+            padding: 0 1.75rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            color: #666;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 1.75rem;
+            max-height: 500px;
+        }
+
+        .faq-toggle {
+            font-size: 1.5em;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        /* CTA Section */
+        .cta-section-new {
+            background: linear-gradient(135deg, #f9fafb 0%, #f3f0ff 100%);
+            padding: 6rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section-new::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -15%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(6, 182, 212, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .cta-section-new::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -15%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(168, 85, 247, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 4rem 3.5rem;
+            border-radius: 2rem;
+            border: 2px solid var(--primary-color);
+            box-shadow: 0 20px 60px rgba(6, 182, 212, 0.15);
+            animation: slideInUp 0.8s ease-out, glow-pulse 3s ease-in-out infinite;
+        }
+
+        .cta-content:hover {
+            box-shadow: 0 30px 80px rgba(6, 182, 212, 0.2);
+            border-color: var(--secondary-color);
+        }
+
+        .cta-section-new h2 {
+            color: var(--dark-color);
+            font-size: 2.8em;
+            margin-bottom: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .cta-section-new h2::after {
+            display: none;
+        }
+
+        .cta-section-new p {
+            color: #4a5568;
+            line-height: 1.8;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .btn-cta {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 1.125rem 3rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 12px 30px rgba(6, 182, 212, 0.35);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-cta::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn-cta:hover {
+            transform: translateY(-6px) scale(1.05);
+            box-shadow: 0 20px 50px rgba(6, 182, 212, 0.4);
+            color: white;
+        }
+
+        .btn-cta:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* Case Studies */
+        .case-study-card {
+            background: white;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            border: 1px solid rgba(6, 182, 212, 0.08);
+            position: relative;
+            animation: slideInUp 0.7s ease-out backwards;
+        }
+
+        .case-study-card:nth-child(1) { animation-delay: 0.15s; }
+        .case-study-card:nth-child(2) { animation-delay: 0.3s; }
+        .case-study-card:nth-child(3) { animation-delay: 0.45s; }
+
+        .case-study-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 10;
+        }
+
+        .case-study-card:hover::after {
+            transform: scaleX(1);
+        }
+
+        .case-study-card:hover {
+            transform: translateY(-18px) scale(1.02);
+            box-shadow: 0 30px 70px rgba(6, 182, 212, 0.25);
+        }
+
+        .case-study-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 2.2rem 1.875rem;
+            position: relative;
+            min-height: 160px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        .case-study-number {
+            font-size: 5em;
+            font-weight: 900;
+            opacity: 0.15;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            line-height: 1;
+            z-index: 1;
+        }
+
+        .case-study-header h3 {
+            font-size: 1.5em;
+            margin: 0 0 0.5rem 0;
+            font-weight: 700;
+            line-height: 1.3;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+
+        .case-study-client {
+            font-size: 0.9em;
+            opacity: 0.95;
+            margin: 0;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+
+        .case-study-body {
+            padding: 1.75rem 1.875rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.125rem;
+        }
+
+        .case-study-section h4 {
+            font-size: 0.9em;
+            color: var(--primary-color);
+            margin: 0 0 0.75rem 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+        }
+
+        .case-study-section p {
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .case-study-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .case-study-section li {
+            color: #555;
+            font-size: 0.95em;
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: flex-start;
+            line-height: 1.6;
+        }
+
+        .case-study-section li:before {
+            content: '✓';
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 0.75rem;
+            font-size: 1.1em;
+            flex-shrink: 0;
+        }
+
+        .case-study-results {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 0.5rem;
+            padding: 1.25rem;
+            background: #f0f8ff;
+            border-radius: 0.875rem;
+            border: 1px solid rgba(6, 182, 212, 0.15);
+        }
+
+        .result-stat-small {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 0.375rem;
+        }
+
+        .result-number {
+            font-size: 1.6em;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+            word-break: break-word;
+        }
+
+        .result-label {
+            font-size: 0.8em;
+            color: #666;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 4rem 0 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.3), transparent);
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.3em;
+            color: white;
+            font-weight: 700;
+            animation: slideInUp 0.6s ease-out;
+        }
+
+        .footer-section {
+            color: #b0b0b0;
+            font-size: 1em;
+            line-height: 1.8;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.75rem;
+            color: #d0d0d0;
+        }
+
+        .footer-section a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .footer-section a:hover {
+            color: var(--secondary-color);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 1.875rem;
+            text-align: center;
+            color: #888;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(6, 182, 212, 0.5);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.85);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -1000px 0;
+            }
+            100% {
+                background-position: 1000px 0;
+            }
+        }
+
+        @keyframes bounce-light {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        @keyframes glow-pulse {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(6, 182, 212, 0.7);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .process-timeline::before {
+                left: 15px;
+            }
+
+            .timeline-step {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+                margin-left: 3.75rem;
+            }
+
+            .timeline-step:nth-child(even) {
+                grid-template-columns: 1fr;
+                direction: ltr;
+            }
+
+            .step-circle {
+                position: absolute;
+                left: -62px;
+                top: 20px;
+            }
+
+            .hero-text h1 {
+                font-size: 2em;
+            }
+
+            .service-item {
+                grid-template-columns: 1fr !important;
+            }
+
+            .service-image {
+                height: 250px;
+            }
+
+            section h2 {
+                font-size: 1.8em;
+            }
+
+            .package-card.featured {
+                transform: scale(1);
+                margin-top: 0;
+            }
+
+            .case-study-results {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .raksha-intro {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .case-study-results {
+                grid-template-columns: repeat(3, 1fr);
+                padding: 0.875rem;
+                gap: 0.875rem;
+            }
+
+            .result-number {
+                font-size: 1.4em;
+            }
+
+            .result-label {
+                font-size: 0.75em;
+            }
+        }
+    </style>
+    <script>
+        const clientConfig = {
+            clientName: 'Colorful Decor',
+            clientDescription: 'Colorful Decor is a luxury interior décor and rug/carpet-focused brand positioned in the premium residential and commercial spaces market in India. The business specializes in handmade rugs, designer flooring décor, and customized rug solutions for luxury interiors. Operating in the high-value niche of designer furnishings and custom carpet manufacturing, Colorful Decor targets architects, interior designers, luxury homeowners, hotels, villas, and real estate developers with exceptional aesthetic products and premium service.',
+            clientMission: 'Premium Handmade Rugs & Luxury Interior Décor for Sophisticated Spaces',
+            clientStats: [
+                'Luxury interior décor and rug specialist',
+                'Custom handmade carpet manufacturing',
+                'B2B collaborations with architects & designers'
+            ],
+            clientServices: [
+                '✓ Handmade Rugs & Carpets (Designer Collections)',
+                '✓ Custom Rug Solutions & Personalization',
+                '✓ Luxury Flooring & Interior Décor',
+                '✓ Designer Collaborations & B2B Services',
+                '✓ Premium Home Furnishing Aesthetics'
+            ],
+            targetAudience: 'architects, interior designers, luxury homeowners, hotels, villas, real estate developers, and premium furnishing buyers',
+            heroImage: 'https://images.unsplash.com/photo-1578500494198-246f612d03b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+            service1Title: 'SEO: Rank for Luxury Rug & Décor Keywords',
+            service1Description: 'Reach customers actively searching for luxury rugs, handmade carpets, designer flooring, and custom interior solutions. We optimize for high-intent keywords like luxury rugs India, handmade carpets, custom rugs manufacturer, and designer rugs online—capturing architects, designers, and luxury buyers at the exact moment they\'re searching.',
+            service2Title: 'Social Media: Build Luxury Brand Authority & Visual Presence',
+            service2Description: 'Leverage Instagram and Pinterest to showcase your stunning rug collections, room transformations, design aesthetics, and craftsmanship stories. Build a devoted community of interior designers and luxury homeowners, establish premium brand credibility, and attract high-value projects through authentic visual storytelling.',
+            impactStats: [
+                { number: '12x', label: 'Search Visibility', description: 'Increase for luxury rug and designer keywords' },
+                { number: '250%', label: 'Qualified Inquiries', description: 'Growth from architects, designers, and premium buyers' },
+                { number: '40%', label: 'Higher Project Leads', description: 'B2B collaborations and commercial projects' },
+                { number: '4-6x', label: 'Revenue Growth', description: 'From targeted premium market positioning' }
+            ]
+        };
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-lg">
+            <a class="navbar-brand" href="#home">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZZJoUYi853n3oUIXIMMx29KBmf3lzLPeiSA&s" alt="seofox.io Logo">
+                <span>seofox.io</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-new py-5">
+        <div class="container-lg">
+            <div class="hero-text" style="max-width: 800px;">
+                <h1>Let's Help <span id="heroClientName">Your Company</span> Grow</h1>
+                <p class="fs-5" style="color: #333;" id="heroMainText">A real strategy to reach your target audience. We understand your mission, and we know how to help people find you when they need you most.</p>
+                <p id="heroSubText" style="color: #666;">This isn't just a proposal—it's a partnership to help your business succeed.</p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <button class="btn btn-cyan" onclick="document.getElementById('packages').scrollIntoView()">View Packages</button>
+                    <button class="btn btn-outline" onclick="document.getElementById('about-client').scrollIntoView()">About Your Company</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-section py-5">
+        <div class="container-lg">
+            <h2>Why Work With <span>seofox.io?</span></h2>
+            <p class="text-center text-muted fs-5" style="max-width: 700px; margin: 0 auto 3rem;">We're not just another marketing agency. We're mission-driven partners who understand the luxury décor market and how to connect premium brands with architects, designers, and high-value buyers actively searching for exceptional craftsmanship.</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="why-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>We Deliver Real Growth</h3>
+                        <p>Not vanity metrics. We focus on qualified inquiries from architects, interior designers, and premium buyers actively searching for luxury rugs and custom décor solutions.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="why-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>We Understand Luxury Markets</h3>
+                        <p>We know the premium interior décor and designer furnishing industry. We connect you with high-intent buyers and B2B partners at the exact moment they're searching for quality and craftsmanship.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="why-card">
+                        <i class="fas fa-handshake"></i>
+                        <h3>We're Your Real Partners</h3>
+                        <p>You're not a project number. You get direct access, honest communication, and a team that respects and understands your premium brand positioning.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="why-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Premium Brand Strategy</h3>
+                        <p>Based on real data and deep understanding of the luxury market. We help you attract genuine buyers who value exceptional craftsmanship and premium aesthetics.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="why-card">
+                        <i class="fas fa-eye"></i>
+                        <h3>Complete Transparency</h3>
+                        <p>You see everything—rankings, inquiries generated, designer engagement, and ROI. No fluff reports. Just honest numbers and actionable insights.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="why-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Dedicated to Your Brand Growth</h3>
+                        <p>A team of specialists passionate about growing luxury brands. We're committed to helping architects and designers discover your exceptional products and craftsmanship.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Client Section -->
+    <section id="about-client" class="py-5">
+        <div class="container-lg">
+            <div class="text-center mb-4">
+                <h2 style="color: #06B6D4; font-size: 2.5em; font-weight: 800;">Colorful Decor</h2>
+            </div>
+            <h2>About <span id="aboutClientName">Colorful Decor</span></h2>
+            <div class="row g-5 align-items-center mt-0">
+                <div class="col-lg-6">
+                    <div class="raksha-content">
+                        <h3 id="aboutTitle">Healing and Precise Predictions for Spiritual Clarity</h3>
+                        <p id="aboutDescription">Colorful Decor, founded by Aryya Roy, is a trusted spiritual guidance and energy healing practice offering authentic tarot readings, Reiki healing, and psychic consultations. With certifications as a Reiki Master and recognition from multiple award-giving bodies, Aryya Roy specializes in helping individuals find clarity, emotional healing, and spiritual transformation through proven metaphysical modalities.</p>
+                        <p class="mt-3" style="color: #555;" id="aboutServicesIntro">Core Services Include:</p>
+                        <ul class="raksha-services" id="aboutServicesList">
+                            <li><strong>Tarot Readings</strong> - Egyptian Tarot, Kabbalah, and Akashic Records consultations</li>
+                            <li><strong>Energy Healing</strong> - Reiki, Crystal Reiki, Shambala Energy, Chakra Balancing</li>
+                            <li><strong>Psychic Guidance</strong> - Angel card readings, life clarity, relationship, and career guidance</li>
+                            <li><strong>Remote Sessions</strong> - Online consultations for accessibility worldwide</li>
+                        </ul>
+                        <p class="mt-4" style="font-weight: bold; color: #06B6D4;" id="aboutOpportunity">The Real Opportunity: Thousands of spiritual seekers are searching for tarot, healing, and guidance online right now. We'll help them find your authentic practice and book consultations with you.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://colorfuldecor.co.in/wp-content/uploads/2026/04/Carpet-Manufacturing-In-india-Bhadhohi-Factory-1024x762.jpg" alt="Colorful Decor - Luxury handmade carpet manufacturing facility" width="600" height="400" class="img-fluid rounded" style="max-width: 100%; height: auto; object-fit: contain;" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5" style="background: #f8f9fa;">
+        <div class="container-lg">
+            <h2>Our <span>Services</span></h2>
+
+            <div class="row g-5 align-items-center mb-5">
+                <div class="col-lg-6">
+                    <div class="service-icon" style="font-size: 3em; color: #06B6D4;">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 id="service1Title">SEO: Help Spiritual Seekers Discover Your Healing Services</h3>
+                    <p id="service1Description">We'll ensure spiritual seekers find your tarot readings, Reiki healing, and psychic services when they search online. Strategic keyword optimization ranks your consultations where people actively seeking guidance are searching.</p>
+                    <ul id="service1Features">
+                        <li>Luxury rug & carpet keywords (handmade rugs, designer carpets, custom rugs)</li>
+                        <li>Product page optimization for collections & customization</li>
+                        <li>Interior design content strategy & blog authority</li>
+                        <li>B2B architect & designer targeting & link building</li>
+                        <li>National & international search visibility</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1251&auto=format&fit=crop" alt="SEO Analytics">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="service-icon" style="font-size: 3em; color: #06B6D4;">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3 id="service2Title">Social Media: Build Designer Authority & Premium Brand Presence</h3>
+                    <p id="service2Description">We'll create stunning visual content showcasing your rug collections, room transformations, and design collaborations. Build a devoted community of architects and designers, and establish Colorful Decor as the premium choice for luxury interior solutions.</p>
+                    <ul id="service2Features">
+                        <li>Instagram & Pinterest strategy for visual discovery</li>
+                        <li>Before/after room transformations & design inspiration</li>
+                        <li>Behind-the-scenes craftsmanship & rug-making content</li>
+                        <li>Designer collaboration posts & project showcases</li>
+                        <li>Hashtag strategy & designer/architect community engagement</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1656164630621-8974e3a7e85c?q=80&w=1170&auto=format&fit=crop" alt="Social Media Marketing">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-5">
+        <div class="container-lg">
+            <h2>Pricing <span>Packages</span></h2>
+            <p class="text-center text-muted fs-5" style="max-width: 700px; margin: 0 auto 3rem;">Choose the perfect plan for your spiritual practice. No hidden fees, transparent pricing.</p>
+
+            <div class="row g-4">
+                <!-- SEO Only -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <div class="package-name">SEO Only</div>
+                            <div class="package-price">₹20,000</div>
+                            <div class="package-period">per month</div>
+                        </div>
+                        <div class="package-body">
+                            <ul class="package-features">
+                                <li>Tarot & Spiritual Service Page SEO</li>
+                                <li>Healing & Psychic Keyword Research</li>
+                                <li>Consultation Booking Optimization</li>
+                                <li>Spiritual Community Link Building</li>
+                                <li>Monthly Ranking & Traffic Reports</li>
+                                <li>Competitor Analysis</li>
+                            </ul>
+                            <button class="package-btn" onclick="selectPackage('SEO Only', '₹20,000')">Select Plan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SMM Only -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <div class="package-name">Social Media Only</div>
+                            <div class="package-price">₹15,000</div>
+                            <div class="package-period">per month</div>
+                        </div>
+                        <div class="package-body">
+                            <ul class="package-features">
+                                <li>Instagram & Facebook Management</li>
+                                <li>Spiritual Wisdom & Insight Content</li>
+                                <li>Client Testimonial Showcase</li>
+                                <li>Spiritual Community Engagement</li>
+                                <li>Monthly Analytics Reports</li>
+                                <li>Growth & Engagement Strategy</li>
+                            </ul>
+                            <button class="package-btn" onclick="selectPackage('Social Media Only', '₹15,000')">Select Plan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- All Services (Featured) -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-card featured">
+                        <div class="package-header">
+                            <div class="package-name">SEO + SMM Bundle</div>
+                            <div class="package-price">₹35,000</div>
+                            <div class="package-period">per month</div>
+                        </div>
+                        <div class="package-body">
+                            <ul class="package-features">
+                                <li>Complete SEO Suite</li>
+                                <li>Full Social Media Management</li>
+                                <li>Consultation Booking Optimization</li>
+                                <li>Lead Tracking & Conversion</li>
+                                <li>Comprehensive Monthly Reports</li>
+                                <li>Priority Support</li>
+                                <li>Quarterly Strategy Review</li>
+                            </ul>
+                            <button class="package-btn" onclick="selectPackage('SEO + SMM Bundle', '₹35,000')">Select Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expected Impact Section -->
+    <section class="py-5">
+        <div class="container-lg">
+            <h2>Expected <span>Impact for Colorful Decor</span></h2>
+            <p class="text-center text-muted fs-5" style="max-width: 700px; margin: 0 auto 3rem;">When you partner with us, here's what Colorful Decor can realistically expect to achieve in the first year through strategic digital marketing and SEO optimization.</p>
+
+            <div class="row g-4" id="impactGrid">
+                <div class="col-md-6 col-lg-3">
+                    <div class="impact-card">
+                        <div class="impact-number">15x</div>
+                        <div class="impact-title">Search Visibility</div>
+                        <p>Increase for tarot, psychic, and healing keywords</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="impact-card">
+                        <div class="impact-number">300%</div>
+                        <div class="impact-title">Consultation Bookings</div>
+                        <p>Substantial increase in spiritual consultation requests</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="impact-card">
+                        <div class="impact-number">350+</div>
+                        <div class="impact-title">New Aligned Clients</div>
+                        <p>Spiritual seekers discovering Colorful Decor services</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="impact-card">
+                        <div class="impact-number">4-6x</div>
+                        <div class="impact-title">Revenue Growth</div>
+                        <p>Return on your marketing investment through targeted growth</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="py-5" style="background: #f9fafb;">
+        <div class="container-lg">
+            <h2>Our <span>Case Studies</span></h2>
+            <p class="text-center text-muted fs-5" style="max-width: 700px; margin: 0 auto 3rem;">Real results from real clients. Here's what we've delivered.</p>
+
+            <div class="row g-4">
+                <!-- Case Study 1 -->
+                <div class="col-lg-4">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <span class="case-study-number">01</span>
+                            <div class="case-study-header-content">
+                                <h3>Bioenergy & Waste Management</h3>
+                                <p class="case-study-client">organicrecycling.co.in · B2B · 10 Months</p>
+                            </div>
+                        </div>
+                        <div style="padding: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid #eee;">
+                            <img src="ORS.png" alt="ORS - Search Console Results" style="max-width: 100%; height: auto; object-fit: contain; border-radius: 0.75rem; display: block;">
+                        </div>
+                        <div class="case-study-body">
+                            <div class="case-study-section">
+                                <h4>Challenge</h4>
+                                <p>Establish search authority in a niche B2B market with zero paid advertising. Pure organic growth needed.</p>
+                            </div>
+                            <div class="case-study-section">
+                                <h4>Solution</h4>
+                                <ul>
+                                    <li>Technical SEO optimization</li>
+                                    <li>Strategic keyword mapping</li>
+                                    <li>Consistent content + backlinks</li>
+                                </ul>
+                            </div>
+                            <div class="case-study-results">
+                                <div class="result-stat-small">
+                                    <span class="result-number">9,470</span>
+                                    <span class="result-label">Organic Clicks</span>
+                                </div>
+                                <div class="result-stat-small">
+                                    <span class="result-number">371K</span>
+                                    <span class="result-label">Impressions</span>
+                                </div>
+                                <div class="result-stat-small">
+                                    <span class="result-number">7.3</span>
+                                    <span class="result-label">Avg. Position</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="col-lg-4">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <span class="case-study-number">02</span>
+                            <div class="case-study-header-content">
+                                <h3>Online Maths Education</h3>
+                                <p class="case-study-client">sparkedmaths.com · EdTech · 7 Weeks</p>
+                            </div>
+                        </div>
+                        <div style="padding: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid #eee;">
+                            <img src="sparkedmaths gsc.png" alt="Sparked Maths - Search Console Results" style="max-width: 100%; height: auto; object-fit: contain; border-radius: 0.75rem; display: block;">
+                        </div>
+                        <div class="case-study-body">
+                            <div class="case-study-section">
+                                <h4>Challenge</h4>
+                                <p>Zero existing organic presence in a competitive EdTech space. Rapid visibility needed for students and parents.</p>
+                            </div>
+                            <div class="case-study-section">
+                                <h4>Solution</h4>
+                                <ul>
+                                    <li>Full content restructure</li>
+                                    <li>Exam-focused keyword mapping</li>
+                                    <li>High-frequency optimized content</li>
+                                </ul>
+                            </div>
+                            <div class="case-study-results">
+                                <div class="result-stat-small">
+                                    <span class="result-number">3,050</span>
+                                    <span class="result-label">Organic Clicks</span>
+                                </div>
+                                <div class="result-stat-small">
+                                    <span class="result-number">77.2K</span>
+                                    <span class="result-label">Impressions</span>
+                                </div>
+                                <div class="result-stat-small">
+                                    <span class="result-number">3.9%</span>
+                                    <span class="result-label">CTR</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="col-lg-4">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <span class="case-study-number">03</span>
+                            <div class="case-study-header-content">
+                                <h3>Marathi Matrimony Platform</h3>
+                                <p class="case-study-client">vadhuvarmahitikendra.com · Built from Scratch · 6 Weeks</p>
+                            </div>
+                        </div>
+                        <div style="padding: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid #eee;">
+                            <img src="vadhuvadhuvar.png" alt="Vadhuvarmahitikendra - Search Console Results" style="max-width: 100%; height: auto; object-fit: contain; border-radius: 0.75rem; display: block;">
+                        </div>
+                        <div class="case-study-body">
+                            <div class="case-study-section">
+                                <h4>Challenge</h4>
+                                <p>Zero digital presence — no website, no domain, no traffic. Complete build + immediate ranking required.</p>
+                            </div>
+                            <div class="case-study-section">
+                                <h4>Solution</h4>
+                                <ul>
+                                    <li>Full website design & development</li>
+                                    <li>SEO built in from day one</li>
+                                    <li>High-intent keyword targeting</li>
+                                </ul>
+                            </div>
+                            <div class="case-study-results">
+                                <div class="result-stat-small">
+                                    <span class="result-number">330</span>
+                                    <span class="result-label">Clicks (6 Weeks)</span>
+                                </div>
+                                <div class="result-stat-small">
+                                    <span class="result-number">20.6%</span>
+                                    <span class="result-label">CTR</span>
+                                </div>
+                                <div class="result-stat-small">
+                                    <span class="result-number">5.4</span>
+                                    <span class="result-label">Avg. Position</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Process Section -->
+    <section id="process" class="py-5" style="background: #f8f9fa;">
+        <div class="container-lg">
+            <h2>Our <span>Process</span></h2>
+            <p class="text-center text-muted fs-5" style="max-width: 700px; margin: 0 auto 3rem;">A strategic, data-driven approach to grow your business reach and impact</p>
+
+            <div class="process-timeline">
+                <!-- Step 1 -->
+                <div class="timeline-step">
+                    <div class="step-circle">
+                        <i class="fas fa-magnifying-glass"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>1. Discovery & Audit</h3>
+                        <p>We analyze your current web presence, competition, target audience, and market opportunities. Deep dive into keyword research and industry trends.</p>
+                        <ul class="step-items">
+                            <li>Website audit & technical assessment</li>
+                            <li>Competitor analysis</li>
+                            <li>Audience persona development</li>
+                            <li>Keyword mapping & research</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-step">
+                    <div class="step-circle">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>2. Strategy & Planning</h3>
+                        <p>Develop comprehensive SEO and social media strategy tailored to your business goals. Set clear KPIs, timelines, and growth targets.</p>
+                        <ul class="step-items">
+                            <li>6-month marketing roadmap</li>
+                            <li>Target keyword strategy</li>
+                            <li>Content calendar creation</li>
+                            <li>Growth metrics & benchmarks</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-step">
+                    <div class="step-circle">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>3. Implementation</h3>
+                        <p>Execute SEO optimizations and launch social media campaigns. Create quality content, build authority, and establish your brand as an industry leader.</p>
+                        <ul class="step-items">
+                            <li>On-page & technical SEO fixes</li>
+                            <li>Content creation & publishing</li>
+                            <li>Social media campaign launch</li>
+                            <li>Link building initiatives</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-step">
+                    <div class="step-circle">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>4. Monitoring & Analytics</h3>
+                        <p>Track all metrics in real-time. Monitor rankings, organic traffic, social engagement, and conversions daily to ensure we're on track.</p>
+                        <ul class="step-items">
+                            <li>Daily ranking tracking</li>
+                            <li>Real-time analytics dashboard</li>
+                            <li>Traffic & engagement monitoring</li>
+                            <li>Competitor performance tracking</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="timeline-step">
+                    <div class="step-circle">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>5. Optimization & Scaling</h3>
+                        <p>Analyze data, identify winning strategies, and scale what works. Continuously refine content, keywords, and campaigns based on performance.</p>
+                        <ul class="step-items">
+                            <li>A/B testing on content</li>
+                            <li>High-performing keyword scaling</li>
+                            <li>Campaign optimization</li>
+                            <li>Content refresh & improvement</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="timeline-step">
+                    <div class="step-circle">
+                        <i class="fas fa-file-chart-line"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>6. Reporting & Growth</h3>
+                        <p>Comprehensive monthly reports showing growth, ROI, and recommendations. Quarterly strategy reviews to plan next phases of scaling.</p>
+                        <ul class="step-items">
+                            <li>Detailed monthly reports</li>
+                            <li>ROI & impact calculations</li>
+                            <li>Quarterly strategy reviews</li>
+                            <li>Growth recommendations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="container-lg">
+            <h2 class="text-white">Key <span class="text-white">Results</span></h2>
+            <div class="row g-5 text-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="result-stat">
+                        <h3 class="text-white">12x</h3>
+                        <p class="text-white">Search Visibility</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="result-stat">
+                        <h3 class="text-white">250%</h3>
+                        <p class="text-white">Qualified Inquiries</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="result-stat">
+                        <h3 class="text-white">40%</h3>
+                        <p class="text-white">Higher Project Leads</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="result-stat">
+                        <h3 class="text-white">4-6x</h3>
+                        <p class="text-white">ROI Multiplier</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-5">
+        <div class="container-lg">
+            <h2>Frequently Asked <span>Questions</span></h2>
+            <div style="max-width: 700px; margin: 3rem auto;">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How will this marketing help my business reach more customers?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our strategy focuses on people actively searching for what you offer. Through SEO, we'll rank your website for high-intent keywords. Via social media, we'll create engaging content that builds your audience. The result: your target customers discovering your business when they need it most.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you provide reports?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We provide comprehensive monthly reports detailing rankings, traffic, social media metrics, and maintenance logs. You'll also have access to real-time dashboards via Google Analytics and other tools.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I switch packages?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! You can upgrade or downgrade your package at any time. Just give us 15 days notice and we'll adjust accordingly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What's the minimum contract period?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend a minimum 3-month engagement to see meaningful results. However, we offer flexible month-to-month contracts with just 15 days notice for cancellation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer custom packages?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! If our standard packages don't fit your needs, we can create a custom package tailored to your specific requirements and budget. Contact us to discuss your needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do you measure success?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We focus on measurable KPIs: organic traffic growth, keyword rankings, conversion rates, social media growth, and ROI. Every strategy is tracked and reported monthly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section-new">
+        <div class="container-lg">
+            <div class="cta-content">
+                <h2>Your Premium Collections Deserve Premium Visibility</h2>
+                <p id="ctaMessage">Right now, architects are browsing for the perfect luxury rugs. Interior designers are searching for handmade carpets. Homeowners and hotels are looking for statement pieces. Your competitors are capturing these high-value searches—but you don't have to let them. We'll position your collections where premium buyers are actively searching, turning online visibility into qualified projects and premium sales.</p>
+                <p style="font-size: 0.95em; color: #666; margin-top: 1rem;"><strong>Packages:</strong> SEO (₹20K) • SMM (₹15K) • All Services (₹35K) + Custom Extras</p>
+                <button class="btn btn-cta" onclick="sendWhatsApp('Marketing Services', '₹20,000 - ₹15,000')">Let's Talk on WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container-lg">
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer-section">
+                        <h3>About seofox.io</h3>
+                        <p>A digital marketing agency specializing in SEO and social media growth for spiritual practices, healing services, and conscious businesses. We help spiritual practitioners reach seekers who need them most. Real results, transparent reporting, and dedicated support.</p>
+                        <p class="mt-3"><strong>🌐 Website:</strong><br><a href="https://www.seofox.io" target="_blank">www.seofox.io</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer-section">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#services">SEO Optimization</a></li>
+                            <li><a href="#services">Social Media Management</a></li>
+                            <li><a href="#packages">View All Packages</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p><strong>📍 Address:</strong><br>Vartak Nagar, Thane West<br>400606 India</p>
+                        <p class="mt-3"><strong>📞 Phone:</strong><br><a href="tel:+918767532568">+91 8767532568</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer-section">
+                        <h3>More Info</h3>
+                        <p><strong>✉️ Email:</strong><br><a href="mailto:seofox.contact@gmail.com">seofox.contact@gmail.com</a></p>
+                        <p class="mt-3"><strong>🕐 Hours:</strong><br>09:00 AM - 05:00 PM<br>Monday - Saturday</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Initialize client configuration
+        function initializeClient() {
+            const savedConfig = localStorage.getItem('proposalConfig');
+            if (savedConfig) {
+                try {
+                    clientConfig = JSON.parse(savedConfig);
+                } catch (e) {
+                    console.log('Using default config');
+                }
+            }
+
+            document.getElementById('heroClientName').textContent = clientConfig.clientName;
+            document.getElementById('heroMainText').textContent = clientConfig.heroMainText || clientConfig.clientDescription;
+            document.getElementById('aboutClientName').textContent = clientConfig.clientName;
+            document.getElementById('aboutTitle').textContent = clientConfig.clientMission;
+            document.getElementById('aboutDescription').textContent = clientConfig.clientDescription;
+
+            const servicesList = document.getElementById('aboutServicesList');
+            servicesList.innerHTML = '';
+            clientConfig.clientServices.forEach(service => {
+                const li = document.createElement('li');
+                li.innerHTML = `<strong>${service}</strong>`;
+                servicesList.appendChild(li);
+            });
+
+            document.getElementById('service1Title').textContent = clientConfig.service1Title;
+            document.getElementById('service1Description').textContent = clientConfig.service1Description;
+            document.getElementById('service2Title').textContent = clientConfig.service2Title;
+            document.getElementById('service2Description').textContent = clientConfig.service2Description;
+
+            if (clientConfig.targetAudience) {
+                document.getElementById('ctaMessage').textContent = `Your ${clientConfig.targetAudience} are searching for what you offer right now. We know how to help them discover you.`;
+            }
+
+            if (clientConfig.impactStats && clientConfig.impactStats.length > 0) {
+                const impactGrid = document.getElementById('impactGrid');
+                if (impactGrid) {
+                    impactGrid.innerHTML = '';
+                    clientConfig.impactStats.forEach(stat => {
+                        const col = document.createElement('div');
+                        col.className = 'col-md-6 col-lg-3';
+                        col.innerHTML = `
+                            <div class="impact-card">
+                                <div class="impact-number">${stat.number}</div>
+                                <div class="impact-title">${stat.label}</div>
+                                <p>${stat.description}</p>
+                            </div>
+                        `;
+                        impactGrid.appendChild(col);
+                    });
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', initializeClient);
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const item = this.closest('.faq-item');
+                item.classList.toggle('active');
+
+                document.querySelectorAll('.faq-item.active').forEach(active => {
+                    if (active !== item) {
+                        active.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // WhatsApp function
+        function sendWhatsApp(packageName, price) {
+            const phoneNumber = '918767532568';
+            const message = `Hi! I'm interested in the ${packageName} package (${price}) for Colorful Decor. Can we discuss how this can help grow my luxury décor brand online and attract premium buyers and designers?`;
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            window.open(whatsappURL, '_blank');
+        }
+
+        function selectPackage(name, price) {
+            sendWhatsApp(name, price);
+        }
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const element = document.querySelector(href);
+                    if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
